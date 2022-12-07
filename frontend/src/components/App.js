@@ -4,6 +4,9 @@ import config from '../config.json';
 import Navbar from './Navbar'
 import Markets from './Markets'
 import Balance from './Balance'
+import Order from './Order'
+import OrderBook from './OrderBook'
+import PriceChart from './PriceChart'
 
 import {
   loadProvider,
@@ -11,6 +14,7 @@ import {
   loadAccount,
   loadTokens,
   loadExchange,
+  loadAllOrders,
   subscribeToEvents
 } from '../store/interactions';
 
@@ -44,6 +48,9 @@ function App() {
     const exchangeConfig = config[chainId].exchange
     const exchange = await loadExchange(provider, exchangeConfig.address, dispatch)
 
+    // Fetch all orders: open, filled, cancelled
+    loadAllOrders(provider, exchange, dispatch)
+
     // Listen to events
     subscribeToEvents(exchange, dispatch)
   }
@@ -65,18 +72,18 @@ function App() {
 
           <Balance />
 
-          {/* Order */}
+          <Order />
 
         </section>
         <section className='exchange__section--right grid'>
 
-          {/* PriceChart */}
+          <PriceChart />
 
           {/* Transactions */}
 
           {/* Trades */}
 
-          {/* OrderBook */}
+          <OrderBook />
 
         </section>
       </main>
