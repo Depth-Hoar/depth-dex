@@ -9,6 +9,7 @@ import OrderBook from './OrderBook'
 import PriceChart from './PriceChart'
 import Trades from './Trades'
 import Transactions from './Transactions'
+import Alert from './Alert'
 
 import {
   loadProvider,
@@ -90,7 +91,7 @@ function App() {
         </section>
       </main>
 
-    {/* Alert */}
+    <Alert />
 
     </div>
   );
