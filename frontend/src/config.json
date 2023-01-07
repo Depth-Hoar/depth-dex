@@ -15,9 +15,33 @@
     "explorerURL": "#"
   },
   "5": {
+    "exchange": {
+      "address": "0xF1FA62e398CBfe5bE8bd250EBbf241b0D8FDf252"
+    },
+    "depth": {
+      "address": "0x1167e83F38Fe476d8eeED5bd121B536C58365413"
+    },
+    "mETH": {
+      "address": "0x510153cd81588c31F31FCbc464ca41f9aa4A1c41"
+    },
+    "mDAI": {
+      "address": "0x9D054F1A8d9E787265D30a318574c8a7B7A8151F"
+    },
     "explorerURL": "https://goerli.etherscan.io"
   },
   "2022": {
-
+    "exchange": {
+      "address": "0x47eb28D8139A188C5686EedE1E9D8EDE3Afdd543"
+    },
+    "depth": {
+      "address": "0x59AF421cB35fc23aB6C8ee42743e6176040031f4"
+    },
+    "mETH": {
+      "address": "0x4fb87c52Bb6D194f78cd4896E3e574028fedBAB9"
+    },
+    "mDAI": {
+      "address": "0xEd8d61f42dC1E56aE992D333A4992C3796b22A74"
+    },
+    "explorerURL": "https://testnet.edgscan.live"
   }
 }
